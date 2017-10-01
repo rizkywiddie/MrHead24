@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_span="6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Mr. Head"
+        android:textColor="#ff0004"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:padding="10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBody"
+            android:layout_width="100dp"
+            android:layout_height="226dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/body" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/ivHair"
+                    android:layout_width="120dp"
+                    android:layout_height="58dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/hair" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/ivEyebrow"
+                    android:layout_height="20dp"
+                    android:layout_width="10dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/eyebrow" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/ivEyes"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/eyes" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|top">
+                <ImageView
+                    android:id="@+id/ivMoustache"
+                    android:layout_height="30dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/moustache" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top">
+                <ImageView
+                    android:id="@+id/ivBeard"
+                    android:layout_height="67dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/beard" />
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox android:id="@+id/cbBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvBody"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Head"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp"
+                />
+        </TableRow>
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox android:id="@+id/cbHair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvHair"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Hair"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox android:id="@+id/cbMoustache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvMoustache"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Moustache"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox
+                android:id="@+id/cbEyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvEyes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Eyes"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox android:id="@+id/cbEyebrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvEyebrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Eyebrow"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:padding="2dp">
+
+            <CheckBox android:id="@+id/cbBeard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="#198900" />
+
+            <TextView
+                android:id="@+id/tvBeard"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Beard"
+                android:textColor="#000000"
+                android:textAlignment="gravity"
+                android:textSize="25dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
